@@ -13,4 +13,18 @@ public class Students {
 
 	}
 
+	public String toString() {
+
+		if (this.finalGrade() > 60) {
+
+			return "FINAL GRADE: " + finalGrade() + "\nPASS";
+
+		} else {
+
+			return "FINAL GRADE: " + finalGrade() + "\nFAILED \nMISSING: " + (60 - finalGrade() + " POINTS");
+
+		}
+
+	}
+
 }
